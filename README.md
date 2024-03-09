@@ -1,6 +1,6 @@
-# Fossil XLinear Structures - `C`
+# Fossil XAlgorithms - `C`
 
-This library provides comprehensive support for linear data structures, offering efficient implementations of arrays and lists. Ideal for scenarios where ordered, accessible data storage is crucial, it empowers developers to manage and manipulate sequential elements with ease.
+XAlgorithms denotes a set of advanced algorithms that go beyond the standard and basic computational routines. These algorithms are often designed to address specific challenges or to optimize performance for particular scenarios. The "x" prefix signifies an extension or augmentation, implying that these algorithms provide enhanced functionalities, improved efficiency, or specialized solutions compared to their more fundamental counterparts. These advanced algorithms may be tailored for specific domains, making them valuable tools in various fields of computer science and software development.
 
 ## Prerequisites
 
@@ -12,15 +12,15 @@ Before getting started, make sure you have the following installed:
 
 **Adding Dependency**:
 
-Create a directory named subprojects in the root directory, next create a file named `fscl-xlinear-c.wrap` in the `subprojects` directory of your project with the following content:
+Create a directory named subprojects in the root directory, next create a file named `fscl-xalgorithms-c.wrap` in the `subprojects` directory of your project with the following content:
 
    ```ini
    [wrap-git]
-   url = https://github.com/fossil-lib/fscl-xlinear-c.git
+   url = https://github.com/fossil-lib/fscl-xalgorithms-c.git
    revision = main
    
    [provide]
-   fscl-xlinear-c = fscl_xlinear_c_dep
+   fscl-xalgorithms-c = fscl_xalgorithms_c_dep
    ```
 
 **Integrate Dependency**:
@@ -28,7 +28,7 @@ Create a directory named subprojects in the root directory, next create a file n
    project('my_project', 'c')
 
    exe = executable('my_project', 'my_project.c',
-       dependencies : dependency('fscl-xlinear-c')) # add this line
+       dependencies : dependency('fscl-xalgorithms-c')) # add this line
 
    test('basic', exe)
    ```
